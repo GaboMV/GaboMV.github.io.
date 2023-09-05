@@ -6,7 +6,7 @@ var numberIte = document.getElementById('numberite');
 function btnGenerar_Click(event){
 	var semilla = txtSemilla.value;
 	var k = semilla.length;
-	var nuu= umberIte.value; 
+	var nuu= numberIte.value; 
 	if (!semilla.trim().length || !semilla){
 		alert('Debe ingresar un valor para semilla');
 		return;
@@ -16,7 +16,7 @@ function btnGenerar_Click(event){
 		return;
 	}
 
-if (numberIte.trim()<1){
+if (nuu<1){
 		alert('No puede ingresar 0 o negativo en el periodo');
 		return;
 	}
