@@ -6,6 +6,7 @@ var numberIte = document.getElementById('numberite');
 function btnGenerar_Click(event){
 	var semilla = txtSemilla.value;
 	var k = semilla.length;
+	var nuu= umberIte.value; 
 	if (!semilla.trim().length || !semilla){
 		alert('Debe ingresar un valor para semilla');
 		return;
@@ -14,7 +15,14 @@ function btnGenerar_Click(event){
 		alert('No puede ingresar un valor menor a 10');
 		return;
 	}
-	if(semilla-parseInt(semilla)!=0 || k-parseInt(k)!=0  ){
+
+if (numberIte.trim()<1){
+		alert('No puede ingresar 0 o negativo en el periodo');
+		return;
+	}
+
+	
+	if(semilla-parseInt(semilla)!=0 || k-parseInt(k)!=0   || nuu-parseInt(nuu)!=0  ){
 		alert("no se admiten numeros decimales no otros formatos que no sean enteros");
 		return;
 			}
