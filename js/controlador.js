@@ -4,8 +4,8 @@ function cargarDatos(){
                                                 <tr><th id="tf-1" value="0">No.</th><th>X<sub>n</sub></th> 
                                                 <th>a * X<sub>n</sub></th><th>+ c</th><th>Xi</th><th>Ri</th></tr></table>`;
     var x1 = document.getElementById("id-semilla").value;
-    var x2 = document.getElementById("id-a").value;
-    console.log(`a: ${x2}`);
+    var y2 = document.getElementById("id-a").value;
+    console.log(`a: ${y2}`);
     var x4 = document.getElementById("id-c").value;
     var x3 = document.getElementById("id-m").value;
     var g= Math.log(x3)/Math.log(2)
