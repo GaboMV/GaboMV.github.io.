@@ -24,7 +24,7 @@ function btnGenerar_Click(event){
 		return;
 	}
 
-if (nuu<1 || nuu<1){
+if (nuu<1 ){
 		alert('No puede ingresar un valor menor a 1 en el periodo');
 		return;
 	}
