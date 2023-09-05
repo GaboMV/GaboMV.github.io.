@@ -16,7 +16,7 @@ function cargarDatos(){
         return;
     }
     if(x1<0 || y2<0 || x3<0|| x4<0){
-        alert("no se admiten numero negativos ni cero");
+        alert("no se admiten numero negativos ");
         return;
         document.getElementById('t00').innerHTML='';
     }
