@@ -4,7 +4,7 @@ function cargarDatos(){
                                                 <tr><th id="tf-1" value="0">No.</th><th>X<sub>n</sub></th> 
                                                 <th>a * X<sub>n</sub></th><th>+ c</th><th>Xi</th><th>Ri</th></tr></table>`;
     var x1 = document.getElementById("id-semilla").value;
-    var x2 =1+4* document.getElementById("id-a").value;
+    var y2 = document.getElementById("id-a").value;
     console.log(`a: ${x2}`);
     var x4 = document.getElementById("id-c").value;
     var x3 = document.getElementById("id-m").value;
@@ -27,7 +27,7 @@ function cargarDatos(){
         document.getElementById('t00').innerHTML='';
     }
     var semilla =parseInt(x1);
-    var a = parseInt(x2);
+    var a = 1+4*(parseInt(x2));
     var m = Math.pow(2,parseInt(g));
     var c = parseInt(x4);
     var stop = parseInt(x3)+1;
