@@ -11,23 +11,23 @@ function cargarDatos(){
     var g= Math.log(x3)/Math.log(2)
 
 
-    if(x1 =="" || x2 =="" || x3=="" || x4==""){
+    if(x1 =="" || y2 =="" || x3=="" || x4==""){
         alert("Por favor llene todos los campos");
         return;
     }
-    if(x1<0 || x2<0 || x3<0|| x4<0){
+    if(x1<0 || y2<0 || x3<0|| x4<0){
         alert("no se admiten numero negativos ni cero");
         return;
         document.getElementById('t00').innerHTML='';
     }
 
-    if(x1-parseInt(x1)!=0 || x2-parseInt(x2)!=0  || x3-parseInt(x3)!=0 || x4-parseInt(x4)!=0 ){
+    if(x1-parseInt(x1)!=0 || y2-parseInt(y2)!=0  || x3-parseInt(x3)!=0 || x4-parseInt(x4)!=0 ){
         alert("no se admiten numeros decimales ni formatos que no sean enteros");
         return;
         document.getElementById('t00').innerHTML='';
     }
     var semilla =parseInt(x1);
-    var a = 1+4*(parseInt(x2));
+    var a = 1+4*(parseInt(y2));
     var m = Math.pow(2,parseInt(g));
     var c = parseInt(x4);
     var stop = parseInt(x3)+1;
