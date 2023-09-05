@@ -9,6 +9,7 @@ function btnGenerar_Click(event){
 
 	var semilla = txtSemilla1.value;
 	var k =  semilla.length;
+	var nuu = numberIte.value;
 	if (!semilla.trim().length || !semilla){
 		alert('Debe ingresar un valor para la semilla 1');
 		return;
@@ -22,11 +23,17 @@ function btnGenerar_Click(event){
 		alert('No puede ingresar un valor menor a 10');
 		return;
 	}
+
+if (nuu<1 || nuu<1){
+		alert('No puede ingresar un valor menor a 1 en el periodo');
+		return;
+	}
+	
 	if (semilla.trim().length != semilla2.trim().length){
 		alert('Las semillas deben ser de la misma longitud');
 		return;
 	}
-	if(semilla-parseInt(semilla)!=0 || k-parseInt(k)!=0 || semilla2-parseInt(semilla2)!=0   ){
+	if(semilla-parseInt(semilla)!=0 || k-parseInt(k)!=0 || semilla2-parseInt(semilla2)!=0 || nuu-parseInt(nuu)!=0   ){
 		alert("no se admiten numeros decimales no otros formatos que no sean enteros");
 		return;
 	}
