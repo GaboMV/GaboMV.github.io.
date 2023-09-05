@@ -7,6 +7,7 @@ function cargarDatos(){
 
     console.log(`x: ${valor}`);
 var v= parseInt(valor);
+       var y2 = document.getElementById("id-a").value;
 
     var x1 = document.getElementById("id-semilla").value;
     if (v==0){
@@ -22,7 +23,7 @@ var v= parseInt(valor);
     var x3 = document.getElementById("id-m").value;
     var rest = (Math.log(x3)/Math.log(2))+2
 
-    if(x1 =="" || x2 =="" || x3=="" ){
+    if(x1 =="" || x2 =="" || x3==""  || y2==""){
         alert("Por favor llene todos los campos");
         return;
     }
