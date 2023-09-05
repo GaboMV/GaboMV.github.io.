@@ -4,9 +4,10 @@ var txtSemilla = document.getElementById('semilla');
 var numberIte = document.getElementById('numberite');
 //var datos = [];
 function btnGenerar_Click(event){
+	var nuu= numberIte.value; 
 	var semilla = txtSemilla.value;
 	var k = semilla.length;
-	var nuu= numberIte.value; 
+	
 	if (!semilla.trim().length || !semilla){
 		alert('Debe ingresar un valor para semilla');
 		return;
